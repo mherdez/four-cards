@@ -5,7 +5,7 @@ export const cards = [
       title: 'Supervisor',
       body:  'Monitors activity to identify project roadblocks',
       icon:  'icon-supervisor.svg',
-      color: 'border-t-Cyan'
+      color: 'border-t-Cyan',
     },
   ],
   // middle Cards
