@@ -1,0 +1,43 @@
+---
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Desafío. Four Cards">
+  <div class='font-Poppins text-center m-16 text-Very-Dark-Blue'>
+    <Header />
+		<main class='flex justify-center items-center gap-12 m-16'>
+			<section>
+				<Card
+					title='Supervisor'
+					body='Monitors activity to identify project roadblocks'
+					icon='icon-supervisor.svg'
+					color='border-t-Cyan'
+				/>
+			</section>
+			<section class='flex flex-col justify-center items-center gap-12'>
+				<Card
+					title='Team Builder'
+					body='Scans our talent network to create the optimal team for your project'
+					icon='icon-team-builder.svg'
+					color='border-t-Red'
+				/>
+				<Card
+					title='Karma'
+					body='Regularly evaluates our talent to ensure quality'
+					icon='icon-karma.svg'
+					color='border-t-Orange'
+				/>
+			</section>
+			<section>
+				<Card
+					title='Calculator'
+					body='Uses data from past projects to provide better delivery estimates'
+					icon='icon-calculator.svg'
+					color='border-t-Blue'
+				/>
+			</section>
+		</main>
+  </div>
+</Layout>

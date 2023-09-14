@@ -1,0 +1,18 @@
+---
+import Card from '../components/Card.astro';
+import { cards } from '../helpers/cardList';
+---
+
+<main class="flex justify-center items-center gap-12 m-16">
+  {
+    cards.map((arrCards) => {
+      return (
+        <section class="flex flex-col justify-center items-center gap-12">
+          {arrCards.map(({ title, body, icon, color }) => (
+            <Card title={title} body={body} icon={icon} color={color} />
+          ))}
+        </section>
+      );
+    })
+  }
+</main>
