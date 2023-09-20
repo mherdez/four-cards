@@ -4,9 +4,10 @@ interface Props {
   body: string;
   icon: string;
   color: string;
+  iconMorado?: boolean;
 }
 
-const { icon, title, body, color } = Astro.props;
+const { icon, title, body, color, iconMorado } = Astro.props;
 ---
 
 <article
@@ -18,5 +19,14 @@ const { icon, title, body, color } = Astro.props;
       {body}
     </p>
   </div>
-  <img class="w-10 self-end" src={icon} alt="" />
+  <!-- <img class="w-10 self-end" src={icon} alt="" /> -->
+  <img class:list={[
+    "w-10 self-end", {iconMorado}
+  ]} src={icon} alt="" />
 </article>
+
+<style>
+  .iconMorado {
+    filter: invert(18%) sepia(54%) saturate(7013%) hue-rotate(275deg) brightness(91%) contrast(113%);
+  }
+</style>

@@ -1,6 +1,14 @@
 export const cards = [
   // first Cards
   [
+
+    {
+      title: 'Supervisor',
+      body:  'Monitors activity to identify project roadblocks',
+      icon:  'icon-balloon.svg',
+      color: 'border-t-Cyan',
+      iconMorado: true
+    },
     {
       title: 'Supervisor',
       body:  'Monitors activity to identify project roadblocks',
@@ -22,6 +30,7 @@ export const cards = [
       icon:  'icon-karma.svg',
       color: 'border-t-Orange'
     },
+
   ],
   // last Cards
   [
